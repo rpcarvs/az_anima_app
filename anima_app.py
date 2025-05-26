@@ -3,6 +3,9 @@ from st_social_media_links import SocialMediaIcons
 
 from utils import show_output
 
+st.set_page_config(page_title="anima_app")
+
+
 with st.sidebar.container(border=False):
     st.sidebar.markdown(
         """
