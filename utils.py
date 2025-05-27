@@ -20,7 +20,7 @@ def request_indexed_smiles(smiles):
 @st.cache_data
 def request_predictions(indexed_smiles):
     # url = "https://animakernel.politepond-2510b4f8.francecentral.azurecontainerapps.io:443/predict"
-    url = "http://localhost:8000"
+    url = "http://localhost:8000/predict"
     token = os.getenv("KERNEL_TOKEN", "")
     headers = {"Authorization": f"Bearer {token}"}
     data = {"smiles": indexed_smiles}
